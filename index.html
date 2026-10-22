@@ -284,8 +284,10 @@ details[open] .faq-plus{transform:rotate(45deg)}
 <script>
 // ===== CONFIG — todos os dados editáveis. pendente:true = aguardando confirmação da clínica =====
 // Ao confirmar um dado, preencha `valor` e troque `pendente: true` por `pendente: false`.
-// A faixa amarela do topo some quando nenhum campo estiver pendente.
+// A faixa amarela do topo lista os campos pendentes; ela só aparece com mostrarPendencias: true
+// (útil para revisar com a clínica) e some sozinha quando nenhum campo estiver pendente.
 const CONFIG = {
+  mostrarPendencias: false,
   whatsapp:        { valor: '554499355613', pendente: false, rotulo: 'WhatsApp de agendamento (só dígitos, ex.: 5544999999999)' },
   mensagemWhatsapp:'Olá! Vim pelo site e gostaria de agendar uma avaliação.',
   telefone:        '+554432451530',
@@ -373,7 +375,7 @@ function montar(c) {
   const lista = pendencias(c);
 
   const faixa = document.getElementById('pendencias');
-  faixa.hidden = lista.length === 0;
+  faixa.hidden = !c.mostrarPendencias || lista.length === 0;
   document.getElementById('pendencias-total').textContent = lista.length;
   document.getElementById('pendencias-lista').innerHTML = lista.map(p => `<li>${esc(p)}</li>`).join('');
 
