@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Símbolo da Odontologia Jean Savoldi e Bianca Savoldi (versão provisória)">
+  <!-- PROVISÓRIO: redesenhado a partir de foto do cartaz. Substituir pelo arquivo original do logo. -->
+  <rect x="0" y="0" width="116" height="116" rx="16" fill="#1F4178"/>
+  <rect x="124" y="0" width="116" height="116" rx="16" fill="#3A4B72"/>
+  <rect x="0" y="124" width="116" height="116" rx="16" fill="#BDDAF3"/>
+  <rect x="124" y="124" width="116" height="116" rx="16" fill="#5E99D9"/>
+  <path d="M120 52C108 34 84 26 64 32C44 38 36 58 38 82C40 100 48 112 52 128C56 146 58 168 62 190C66 212 74 226 86 226C98 226 102 210 104 194C106 176 110 160 120 160C130 160 134 176 136 194C138 210 142 226 154 226C166 226 174 212 178 190C182 168 184 146 188 128C192 112 200 100 202 82C204 58 196 38 176 32C156 26 132 34 120 52Z" fill="#FFFFFF"/>
+</svg>
