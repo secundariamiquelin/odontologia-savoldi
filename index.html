@@ -581,13 +581,5 @@ iniciarBotaoFixo();
 iniciarMedicao(CONFIG);
 </script>
 
-<style>
-.selo-demo{position:fixed;left:12px;bottom:12px;z-index:70;padding:8px 12px;border-radius:999px;background:rgba(19,35,63,0.9);color:#fff;font:600 12px/1 system-ui,sans-serif;letter-spacing:0.02em;pointer-events:none}
-/* No fim da página, o selo não pode cobrir a última linha do rodapé */
-#rodape{padding-bottom:72px!important}
-/* Abaixo de 900px aparece o botão fixo do WhatsApp no canto inferior: o selo sobe para não cobri-lo */
-@media (max-width:899px){.selo-demo{bottom:80px}#rodape{padding-bottom:120px!important}}
-</style>
-<div class="selo-demo" role="note">Demonstração · dados fictícios</div>
 </body>
 </html>
