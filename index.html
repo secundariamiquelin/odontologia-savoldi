@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Conversão estática do design "Landing Page.dc.html" (Claude Design): mesma marcação e estilos, sem o runtime React. -->
+<title>Dentista em Mandaguaçu-PR | Odontologia Jean Savoldi &amp; Bianca Savoldi</title>
+<meta name="description" content="Dentista em Mandaguaçu-PR. Atendimento próximo, com explicação clara de cada passo. Agende sua avaliação por telefone: (44) 3245-1530.">
+<meta property="og:title" content="Odontologia Jean Savoldi &amp; Bianca Savoldi — Mandaguaçu-PR">
+<meta property="og:description" content="Seu sorriso em boas mãos, aqui em Mandaguaçu. Agende sua avaliação.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<!-- PENDENTE: troque pelo endereço absoluto depois de publicar, ex.: https://seudominio.com.br/img/og-image.png -->
+<meta property="og:image" content="img/og-image.png">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&amp;family=Nunito+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;background:#fff;color:#3A4B72;font-family:'Nunito Sans',system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+*{box-sizing:border-box}
+a{color:#277B76}
+a:hover{color:#1F4178}
+:focus-visible{outline:3px solid #1F4178;outline-offset:3px;border-radius:6px}
+summary{cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+/* Estados de hover do design (no original vinham do atributo style-hover do runtime) */
+.h-marinho:hover{background:#1F4178!important;color:#fff!important}
+.h-petroleo:hover{background:#277B76!important;color:#fff!important}
+.h-claro:hover{background:#BDDAF3!important;color:#1F4178!important}
+.h-branco:hover{background:#fff!important;color:#1F4178!important}
+/* Menu só em telas largas (no original: matchMedia min-width 900px) */
+@media (max-width:899px){.so-largo{display:none!important}}
+/* Correção sobre o design: no celular "Agendar avaliação" não cabia ao lado do logo e era cortado; ali o botão diz só "Agendar" */
+.rotulo-curto{display:none}
+@media (max-width:479px){.rotulo-longo{display:none}.rotulo-curto{display:inline}}
+/* Em telas abaixo de 360px nem "Agendar" cabia: o logo encolhe um pouco e os respiros laterais diminuem */
+@media (max-width:359px){.topo-conteudo{padding:10px 14px!important;gap:10px!important}.marca-svg{width:34px;height:34px}.marca-nome{font-size:17px!important}}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+
+<div style="position:sticky;top:0;z-index:50">
+  <details id="pendencias" hidden style="background:#FCEFC7;color:#5A4100;font-size:14px;line-height:1.4;border-bottom:1px solid #E9D27E">
+    <summary style="padding:8px 20px;display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap;min-height:44px">
+      <strong>Versão provisória:</strong>
+      <span><span id="pendencias-total">0</span> dados aguardando confirmação da clínica.</span>
+      <span style="text-decoration:underline">Ver lista</span>
+    </summary>
+    <ul id="pendencias-lista" style="margin:0 auto;padding:4px 20px 14px 40px;max-width:1160px;columns:240px;column-gap:32px"></ul>
+  </details>
+  <header style="background:rgba(255,255,255,0.97);backdrop-filter:blur(8px);border-bottom:1px solid #E3EBF4">
+    <div class="topo-conteudo" style="max-width:1160px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+      <a href="#inicio" aria-label="Odontologia Jean Savoldi &amp; Bianca Savoldi — início" style="display:flex;align-items:center;gap:10px;text-decoration:none;min-height:44px">
+        <svg class="marca-svg" width="40" height="40" viewBox="0 0 100 100" aria-hidden="true">
+          <rect x="0" y="0" width="48" height="48" rx="12" fill="#1F4178"></rect>
+          <rect x="52" y="0" width="48" height="48" rx="12" fill="#3A4B72"></rect>
+          <rect x="0" y="52" width="48" height="48" rx="12" fill="#BDDAF3"></rect>
+          <rect x="52" y="52" width="48" height="48" rx="12" fill="#5E99D9"></rect>
+          <path d="M28 30 C28 20 40 18 50 25 C60 18 72 20 72 30 C72 44 67 52 65 64 C63 78 58 84 55 82 C52 80 53 66 50 66 C47 66 48 80 45 82 C42 84 37 78 35 64 C33 52 28 44 28 30Z" fill="#fff"></path>
+        </svg>
+        <span style="display:flex;flex-direction:column;line-height:1.1">
+          <span class="marca-nome" style="font-family:Poppins,sans-serif;font-weight:700;font-size:20px;letter-spacing:0.04em;color:#2E9395">ODONTOLOGIA</span>
+          <span style="font-variant:small-caps;font-weight:700;font-size:12px;letter-spacing:0.06em;color:#277B76">Jean Savoldi &amp; Bianca Savoldi</span>
+        </span>
+      </a>
+      <nav class="so-largo" aria-label="Seções" style="display:flex;gap:4px;align-items:center">
+        <a href="#tratamentos" style="padding:10px 12px;color:#1F4178;text-decoration:none;font-weight:600">Tratamentos</a>
+        <a href="#equipe" style="padding:10px 12px;color:#1F4178;text-decoration:none;font-weight:600">Equipe</a>
+        <a href="#localizacao" style="padding:10px 12px;color:#1F4178;text-decoration:none;font-weight:600">Localização</a>
+        <a href="#duvidas" style="padding:10px 12px;color:#1F4178;text-decoration:none;font-weight:600">Dúvidas</a>
+      </nav>
+      <a class="h-marinho" data-principal href="tel:+554432451530" rel="noopener" style="display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:#277B76;color:#fff;text-decoration:none;font-weight:700;font-size:15px;white-space:nowrap"><span class="rotulo-longo">Agendar avaliação</span><span class="rotulo-curto">Agendar</span></a>
+    </div>
+  </header>
+</div>
+
+<main id="inicio">
+  <section style="background:linear-gradient(180deg,#F5F8FB 0%,#fff 100%);padding:clamp(40px,7vw,88px) 20px">
+    <div style="max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(32px,5vw,64px);align-items:center">
+      <div style="display:flex;flex-direction:column;gap:22px">
+        <p style="margin:0;font-weight:700;color:#277B76;font-size:15px;letter-spacing:0.06em;text-transform:uppercase">Dentista em Mandaguaçu-PR</p>
+        <h1 style="margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(34px,5.4vw,56px);line-height:1.08;color:#1F4178;text-wrap:balance">Seu sorriso em boas mãos, aqui em Mandaguaçu</h1>
+        <p style="margin:0;font-size:clamp(17px,1.6vw,19px);max-width:34em;text-wrap:pretty">Atendimento próximo e sem pressa, com explicação clara de cada passo — da primeira conversa ao plano de tratamento. Na Av. Sete de Setembro, Vila São Lourenço.</p>
+        <div id="hero-acoes" style="display:flex;flex-wrap:wrap;gap:12px">
+          <a class="h-marinho" data-principal href="tel:+554432451530" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 26px;border-radius:999px;background:#277B76;color:#fff;text-decoration:none;font-weight:700;font-size:17px">Agendar minha avaliação</a>
+          <a class="h-marinho" data-ligar href="tel:+554432451530" style="display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 24px;border-radius:999px;border:2px solid #1F4178;color:#1F4178;text-decoration:none;font-weight:700;font-size:17px">Ligar (44) 3245-1530</a>
+        </div>
+        <a id="hero-nota" hidden data-google target="_blank" rel="noopener" style="align-self:flex-start;display:inline-flex;gap:8px;align-items:center;color:#1F4178;text-decoration:none;font-weight:700"><span aria-hidden="true" style="color:#C98A00">★</span><span data-nota-texto></span></a>
+      </div>
+      <figure style="margin:0;position:relative;aspect-ratio:16/10;border-radius:24px;overflow:hidden;background:#E3EEF8;display:flex;align-items:flex-end">
+        <!-- Foto de banco (Unsplash), só ilustrativa: trocar pela foto real da clínica quando chegar -->
+        <img src="img/hero.webp" width="1344" height="840" alt="Imagem ilustrativa: cadeira odontológica e refletor em consultório claro" fetchpriority="high" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+        <figcaption style="position:relative;margin:14px;padding:6px 10px;background:rgba(255,255,255,0.9);border-radius:8px;font-size:12px;color:#1F4178">Imagem ilustrativa</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section aria-label="Por que confiar" style="padding:0 20px">
+    <div style="max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:1px;background:#E3EBF4;border:1px solid #E3EBF4;border-radius:18px;overflow:hidden">
+      <div style="background:#fff;padding:20px 22px;display:flex;flex-direction:column;gap:4px">
+        <strong style="color:#1F4178">Avaliações no Google</strong>
+        <span id="confianca-nota" hidden data-nota-texto></span>
+        <span id="confianca-nota-pendente" style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span style="font-size:11px;font-weight:700;letter-spacing:0.08em;background:#FCEFC7;color:#5A4100;padding:2px 8px;border-radius:4px">PENDENTE</span><span style="font-size:15px">nota a confirmar</span></span>
+      </div>
+      <div style="background:#fff;padding:20px 22px;display:flex;flex-direction:column;gap:4px">
+        <strong style="color:#1F4178">Dois dentistas</strong>
+        <span style="font-size:15px">CRO-<span data-uf>PR</span> 12812 · CRO-<span data-uf>PR</span> 17189</span>
+      </div>
+      <div style="background:#fff;padding:20px 22px;display:flex;flex-direction:column;gap:4px">
+        <strong style="color:#1F4178">Perto de casa</strong>
+        <span style="font-size:15px">Av. Sete de Setembro, Vila São Lourenço</span>
+      </div>
+      <div style="background:#fff;padding:20px 22px;display:flex;flex-direction:column;gap:4px">
+        <strong style="color:#1F4178">Tempo de atuação</strong>
+        <span style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span id="tempo-pendente" style="font-size:11px;font-weight:700;letter-spacing:0.08em;background:#FCEFC7;color:#5A4100;padding:2px 8px;border-radius:4px">PENDENTE</span><span id="tempo-atuacao" style="font-size:15px">a confirmar</span></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="tratamentos" style="padding:clamp(56px,8vw,104px) 20px">
+    <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:36px">
+      <div style="display:flex;flex-direction:column;gap:12px;max-width:640px">
+        <h2 style="margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,40px);line-height:1.15;color:#1F4178">Atendimento em</h2>
+        <p style="margin:0">Tratamentos para a família toda. Na avaliação, a gente explica o que o seu caso precisa — e o que não precisa.</p>
+      </div>
+      <div id="lista-tratamentos" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:16px"></div>
+    </div>
+  </section>
+
+  <section id="equipe" style="background:#BDDAF3;padding:clamp(56px,8vw,104px) 20px">
+    <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:36px">
+      <h2 style="margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,40px);line-height:1.15;color:#1F4178">Quem vai cuidar de você</h2>
+      <div id="lista-equipe" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:20px"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="como-funciona" style="padding:clamp(56px,8vw,104px) 20px">
+    <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:36px">
+      <h2 id="como-funciona" style="margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,40px);line-height:1.15;color:#1F4178">Como funciona a primeira consulta</h2>
+      <ol style="margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:28px">
+        <li style="display:flex;flex-direction:column;gap:10px;border-top:3px solid #2E9395;padding-top:18px">
+          <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:36px;color:#2E9395;line-height:1">1</span>
+          <h3 style="margin:0;font-family:Poppins,sans-serif;font-weight:600;font-size:20px;color:#1F4178">Você chama a gente</h3>
+          <p style="margin:0">Pelo <span id="canal-contato">telefone (44) 3245-1530</span>. Escolhemos juntos o melhor dia e horário para você.</p>
+        </li>
+        <li style="display:flex;flex-direction:column;gap:10px;border-top:3px solid #2E9395;padding-top:18px">
+          <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:36px;color:#2E9395;line-height:1">2</span>
+          <h3 style="margin:0;font-family:Poppins,sans-serif;font-weight:600;font-size:20px;color:#1F4178">Faz a avaliação</h3>
+          <p style="margin:0">Conversamos sobre o que te incomoda e examinamos com calma. Pode contar se tem medo de dentista.</p>
+        </li>
+        <li style="display:flex;flex-direction:column;gap:10px;border-top:3px solid #2E9395;padding-top:18px">
+          <span style="font-family:Poppins,sans-serif;font-weight:700;font-size:36px;color:#2E9395;line-height:1">3</span>
+          <h3 style="margin:0;font-family:Poppins,sans-serif;font-weight:600;font-size:20px;color:#1F4178">Recebe o plano explicado</h3>
+          <p style="margin:0">Antes de começar qualquer tratamento, você entende cada etapa e tira todas as dúvidas.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="depoimentos" style="background:#F5F8FB;padding:clamp(56px,8vw,104px) 20px">
+    <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+      <div style="display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap">
+        <h2 id="depoimentos" style="margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,40px);line-height:1.15;color:#1F4178">O que dizem os pacientes</h2>
+        <a class="h-marinho" data-google target="_blank" rel="noopener" style="display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:999px;border:2px solid #1F4178;color:#1F4178;text-decoration:none;font-weight:700">Ver avaliações no Google</a>
+      </div>
+      <div id="lista-depoimentos" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:16px"></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="estrutura" style="padding:clamp(56px,8vw,104px) 20px">
+    <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+      <h2 id="estrutura" style="margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,40px);line-height:1.15;color:#1F4178">Nosso espaço</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:16px">
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="aspect-ratio:3/2;border-radius:18px;background:repeating-linear-gradient(135deg,#BDDAF3 0 12px,#CFE4F7 12px 24px);display:flex;align-items:flex-end"><span style="margin:10px;padding:4px 8px;background:#fff;border-radius:6px;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#1F4178">img/fachada.webp · 1200×800</span></div>
+          <figcaption style="font-weight:700;color:#1F4178">Fachada <span style="font-weight:400;font-size:14px;color:#3A4B72">· imagem ilustrativa</span></figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="aspect-ratio:3/2;border-radius:18px;background:repeating-linear-gradient(135deg,#BDDAF3 0 12px,#CFE4F7 12px 24px);display:flex;align-items:flex-end"><span style="margin:10px;padding:4px 8px;background:#fff;border-radius:6px;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#1F4178">img/recepcao.webp · 1200×800</span></div>
+          <figcaption style="font-weight:700;color:#1F4178">Recepção <span style="font-weight:400;font-size:14px;color:#3A4B72">· imagem ilustrativa</span></figcaption>
+        </figure>
+        <figure style="margin:0;display:flex;flex-direction:column;gap:10px">
+          <div style="aspect-ratio:3/2;border-radius:18px;background:repeating-linear-gradient(135deg,#BDDAF3 0 12px,#CFE4F7 12px 24px);display:flex;align-items:flex-end"><span style="margin:10px;padding:4px 8px;background:#fff;border-radius:6px;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#1F4178">img/consultorio.webp · 1200×800</span></div>
+          <figcaption style="font-weight:700;color:#1F4178">Consultório <span style="font-weight:400;font-size:14px;color:#3A4B72">· imagem ilustrativa</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="duvidas" style="background:#F5F8FB;padding:clamp(56px,8vw,104px) 20px">
+    <div style="max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:28px">
+      <h2 style="margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,40px);line-height:1.15;color:#1F4178">Dúvidas frequentes</h2>
+      <div id="lista-duvidas" style="display:flex;flex-direction:column;gap:10px"></div>
+    </div>
+  </section>
+
+  <section id="localizacao" style="padding:clamp(56px,8vw,104px) 20px">
+    <div style="max-width:1160px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:32px;align-items:stretch">
+      <div style="display:flex;flex-direction:column;gap:22px">
+        <h2 style="margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,40px);line-height:1.15;color:#1F4178">Onde estamos</h2>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <strong style="color:#1F4178">Endereço</strong>
+          <span data-endereco-linha>Av. Sete de Setembro, nº [PREENCHER]</span>
+          <span>Vila São Lourenço · Mandaguaçu-PR · 87160-000</span>
+          <span id="numero-pendente" style="align-self:flex-start;margin-top:4px;font-size:11px;font-weight:700;letter-spacing:0.08em;background:#FCEFC7;color:#5A4100;padding:2px 8px;border-radius:4px">PENDENTE · número do imóvel</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px">
+          <strong style="color:#1F4178">Telefone</strong>
+          <a data-ligar href="tel:+554432451530" style="font-weight:700;font-size:20px;align-self:flex-start;padding:6px 0">(44) 3245-1530</a>
+        </div>
+        <div id="bloco-horarios" style="display:flex;flex-direction:column;gap:6px">
+          <strong style="color:#1F4178">Horários</strong>
+          <span id="horarios-pendente" style="align-self:flex-start;font-size:11px;font-weight:700;letter-spacing:0.08em;background:#FCEFC7;color:#5A4100;padding:2px 8px;border-radius:4px">PENDENTE</span>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a class="h-petroleo" id="como-chegar" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;min-height:50px;padding:0 22px;border-radius:999px;background:#1F4178;color:#fff;text-decoration:none;font-weight:700">Como chegar</a>
+          <a class="h-marinho" data-ligar href="tel:+554432451530" style="display:inline-flex;align-items:center;min-height:50px;padding:0 22px;border-radius:999px;border:2px solid #1F4178;color:#1F4178;text-decoration:none;font-weight:700">Ligar agora</a>
+        </div>
+      </div>
+      <div style="min-height:340px;border-radius:22px;overflow:hidden;background:#BDDAF3">
+        <iframe title="Mapa: Odontologia Jean Savoldi em Mandaguaçu-PR" src="https://www.google.com/maps?q=Odontologia%20Jean%20Savoldi%2C%20Av.%20Sete%20de%20Setembro%2C%20Mandagua%C3%A7u%20-%20PR&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;width:100%;height:100%;min-height:340px;display:block"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="chamada-final" style="padding:0 20px clamp(56px,8vw,104px)">
+    <div style="max-width:1160px;margin:0 auto;background:#1F4178;border-radius:28px;padding:clamp(36px,6vw,72px) clamp(24px,5vw,64px);display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between;position:relative;overflow:hidden">
+      <div aria-hidden="true" style="position:absolute;right:-50px;bottom:-50px;width:180px;height:180px;border-radius:40px;background:#5E99D9;opacity:0.35"></div>
+      <div style="position:relative;display:flex;flex-direction:column;gap:10px;max-width:560px">
+        <h2 style="margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:clamp(28px,3.6vw,40px);line-height:1.15;color:#fff;text-wrap:balance">Vamos marcar sua avaliação?</h2>
+        <p style="margin:0;color:#E6EEF8">Uma conversa rápida resolve. A gente encontra um horário que funcione para você.</p>
+      </div>
+      <div style="position:relative;display:flex;flex-wrap:wrap;gap:12px">
+        <a class="h-claro" data-principal href="tel:+554432451530" rel="noopener" style="display:inline-flex;align-items:center;min-height:54px;padding:0 26px;border-radius:999px;background:#fff;color:#1F4178;text-decoration:none;font-weight:700;font-size:17px">Agendar minha avaliação</a>
+        <a class="h-branco" data-ligar href="tel:+554432451530" style="display:inline-flex;align-items:center;min-height:54px;padding:0 24px;border-radius:999px;border:2px solid #fff;color:#fff;text-decoration:none;font-weight:700;font-size:17px">Ligar (44) 3245-1530</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="rodape" style="background:#1F4178;color:#E6EEF8;padding:56px 20px 32px;font-size:15px">
+  <div style="max-width:1160px;margin:0 auto;display:flex;flex-direction:column;gap:32px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:28px">
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <strong style="font-family:Poppins,sans-serif;color:#fff;font-size:17px">Odontologia Jean Savoldi &amp; Bianca Savoldi</strong>
+        <span>Dr. Jean Savoldi · CRO-<span data-uf>PR</span> 12812</span>
+        <span>Dra. Bianca Savoldi · CRO-<span data-uf>PR</span> 17189</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <span><strong style="color:#fff">Responsável técnico:</strong> <span id="responsavel">[PREENCHER]</span></span>
+        <span><strong style="color:#fff">Inscrição da clínica no CRO-PR:</strong> <span id="inscricao">[PREENCHER]</span></span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px">
+        <span><span data-endereco-linha>Av. Sete de Setembro, nº [PREENCHER]</span>, Vila São Lourenço</span>
+        <span>Mandaguaçu-PR · 87160-000</span>
+        <a data-ligar href="tel:+554432451530" style="color:#fff;font-weight:700;align-self:flex-start;padding:4px 0">(44) 3245-1530</a>
+      </div>
+      <div id="redes" style="display:flex;flex-direction:column;gap:6px">
+        <strong style="color:#fff">Redes</strong>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid rgba(255,255,255,0.2);padding-top:20px;font-size:14px">
+      <span>© <span id="ano">2026</span> Odontologia Jean Savoldi &amp; Bianca Savoldi</span>
+      <span id="aviso-ilustrativas">Imagens ilustrativas.</span>
+    </div>
+  </div>
+</footer>
+
+<a id="fab" hidden data-principal href="tel:+554432451530" rel="noopener" aria-label="Ligar e agendar" style="position:fixed;right:16px;bottom:16px;z-index:40;display:inline-flex;align-items:center;gap:8px;min-height:52px;padding:0 20px;border-radius:999px;background:#277B76;color:#fff;text-decoration:none;font-weight:700;box-shadow:0 8px 24px rgba(31,65,120,0.3)">Ligar e agendar</a>
+
+<div id="consentimento" hidden role="dialog" aria-label="Aviso de cookies" style="position:fixed;left:16px;right:16px;bottom:16px;z-index:60;max-width:560px;margin:0 auto;background:#fff;border-radius:16px;padding:18px 20px;box-shadow:0 12px 36px rgba(31,65,120,0.25);display:flex;flex-direction:column;gap:12px;font-size:15px">
+  <span>Usamos cookies de medição para entender como o site é usado. Você pode recusar.</span>
+  <div style="display:flex;gap:10px;flex-wrap:wrap">
+    <button id="cookies-aceitar" style="min-height:44px;padding:0 18px;border-radius:999px;border:0;background:#277B76;color:#fff;font:inherit;font-weight:700;cursor:pointer">Aceitar</button>
+    <button id="cookies-recusar" style="min-height:44px;padding:0 18px;border-radius:999px;border:2px solid #1F4178;background:#fff;color:#1F4178;font:inherit;font-weight:700;cursor:pointer">Recusar</button>
+  </div>
+</div>
+
+<script>
+// ===== CONFIG — todos os dados editáveis. pendente:true = aguardando confirmação da clínica =====
+// Ao confirmar um dado, preencha `valor` e troque `pendente: true` por `pendente: false`.
+// A faixa amarela do topo some quando nenhum campo estiver pendente.
+const CONFIG = {
+  whatsapp:        { valor: '554499355613', pendente: false, rotulo: 'WhatsApp de agendamento (só dígitos, ex.: 5544999999999)' },
+  mensagemWhatsapp:'Olá! Vim pelo site e gostaria de agendar uma avaliação.',
+  telefone:        '+554432451530',
+  enderecoNumero:  { valor: '', pendente: true, rotulo: 'Número do imóvel na Av. Sete de Setembro' },
+  croUF:           { valor: 'PR', pendente: true, rotulo: 'UF dos CROs (assumido PR)' },
+  horarios:        { pendente: true, rotulo: 'Horários de atendimento', valor: [
+    { dia: 'Segunda a sexta', horas: '[PREENCHER]', dias: 'Mo-Fr', abre: '', fecha: '' },
+    { dia: 'Sábado', horas: '[PREENCHER]', dias: 'Sa', abre: '', fecha: '' },
+    { dia: 'Domingo', horas: '[PREENCHER]', dias: 'Su', abre: '', fecha: '' }
+  ] },
+  tratamentos:     { pendente: true, rotulo: 'Lista de tratamentos oferecidos', valor: [
+    { nome: 'Avaliação e limpeza', texto: 'Um check-up sem pressa para saber como está a sua saúde bucal.' },
+    { nome: 'Restaurações', texto: 'Para dentes com cárie ou lascados, devolvendo conforto ao mastigar.' },
+    { nome: 'Tratamento de canal', texto: 'Cuida da causa da dor e busca preservar o seu dente natural.' },
+    { nome: 'Clareamento', texto: 'Orientação sobre clareamento depois de avaliar os seus dentes.' },
+    { nome: 'Próteses', texto: 'Opções para repor dentes perdidos e voltar a mastigar e sorrir.' },
+    { nome: 'Implantes', texto: 'Avaliação para saber se o implante é indicado no seu caso.' },
+    { nome: 'Aparelho ortodôntico', texto: 'Acompanhamento para alinhar os dentes, de crianças a adultos.' },
+    { nome: 'Atendimento infantil', texto: 'Um primeiro contato tranquilo para os pequenos criarem confiança.' }
+  ] },
+  dentistas: [
+    { nome: 'Dr. Jean Savoldi', cro: '12812', foto: 'img/jean.webp',
+      bio: { pendente: true, rotulo: 'Biografia — Dr. Jean', valor: 'Texto de exemplo: formação, anos de atuação e o que mais gosta no atendimento. Substituir pelo texto enviado pela clínica.' } },
+    { nome: 'Dra. Bianca Savoldi', cro: '17189', foto: 'img/bianca.webp',
+      bio: { pendente: true, rotulo: 'Biografia — Dra. Bianca', valor: 'Texto de exemplo: formação, anos de atuação e o que mais gosta no atendimento. Substituir pelo texto enviado pela clínica.' } }
+  ],
+  fotosReais:      { valor: false, pendente: true, rotulo: 'Fotos reais (hero, fachada, recepção, consultório, dentistas)' },
+  logoOriginal:    { valor: false, pendente: true, rotulo: 'Arquivo original do logo (SVG atual é provisório)' },
+  depoimentos:     { pendente: true, rotulo: 'Avaliações do Google autorizadas', valor: [
+    { texto: 'Aqui entra uma avaliação real do Google, transcrita literalmente e com autorização do paciente.', autor: 'Nome do paciente · Google' },
+    { texto: 'Segundo depoimento real. Até a autorização chegar, este bloco é apenas um exemplo.', autor: 'Nome do paciente · Google' }
+  ] },
+  googlePerfilUrl: { valor: '', pendente: true, rotulo: 'Link do perfil no Google' },
+  googleNota:      { valor: '4,6', pendente: true, rotulo: 'Nota no Google (provável 4,6)' },
+  googleTotal:     { valor: '10', pendente: true, rotulo: 'Total de avaliações no Google (provável 10)' },
+  tempoAtuacao:    { valor: 'a confirmar', pendente: true, rotulo: 'Tempo de atuação' },
+  responsavelTecnico: { valor: '[PREENCHER]', pendente: true, rotulo: 'Responsável técnico' },
+  inscricaoClinica:   { valor: '[PREENCHER]', pendente: true, rotulo: 'Inscrição da clínica no CRO-PR' },
+  convenios:       { valor: '', pendente: true, rotulo: 'Convênios aceitos' },
+  urgencia:        { valor: '', pendente: true, rotulo: 'Atendimento de urgência' },
+  redes:           { pendente: true, rotulo: 'Instagram e Facebook', valor: { Instagram: '', Facebook: '' } },
+  siteUrl:         { valor: '', pendente: true, rotulo: 'Domínio do site' },
+  ga4Id:           { valor: '', pendente: true, rotulo: 'ID do Google Analytics 4 (opcional)' }
+};
+
+/* ---------- utilitários ---------- */
+function esc(texto) {
+  return String(texto).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+const ETIQUETA = 'font-size:11px;font-weight:700;letter-spacing:0.08em;background:#FCEFC7;color:#5A4100;padding:2px 8px;border-radius:4px';
+
+function pendencias(c) {
+  const saida = [];
+  const andar = v => {
+    if (!v || typeof v !== 'object') return;
+    if (Array.isArray(v)) return v.forEach(andar);
+    if (v.pendente === true && v.rotulo) saida.push(v.rotulo);
+    Object.values(v).forEach(x => { if (x && typeof x === 'object') andar(x); });
+  };
+  andar(c);
+  return saida;
+}
+
+function valores(c) {
+  const waOk = !c.whatsapp.pendente && c.whatsapp.valor;
+  const waHref = 'https://wa.me/' + c.whatsapp.valor + '?text=' + encodeURIComponent(c.mensagemWhatsapp);
+  const nome = 'Odontologia Jean Savoldi, Av. Sete de Setembro' + (c.enderecoNumero.pendente ? '' : ' ' + c.enderecoNumero.valor) + ', Mandaguaçu - PR';
+  const mapsHref = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(nome);
+  return {
+    waOk, mapsHref,
+    primaryHref: waOk ? waHref : 'tel:' + c.telefone,
+    primaryTarget: waOk ? '_blank' : '_self',
+    fabLabel: waOk ? 'Falar no WhatsApp' : 'Ligar e agendar',
+    canalContato: waOk ? 'WhatsApp ou telefone' : 'telefone (44) 3245-1530',
+    googleUrl: c.googlePerfilUrl.pendente ? mapsHref : c.googlePerfilUrl.valor,
+    ratingConfirmed: !c.googleNota.pendente && !c.googleTotal.pendente,
+    ratingText: c.googleNota.valor + ' · ' + c.googleTotal.valor + ' avaliações no Google',
+    enderecoLinha: 'Av. Sete de Setembro' + (c.enderecoNumero.pendente ? ', nº [PREENCHER]' : ', ' + c.enderecoNumero.valor),
+  };
+}
+
+/* ---------- montagem ---------- */
+function montar(c) {
+  const v = valores(c);
+  const lista = pendencias(c);
+
+  const faixa = document.getElementById('pendencias');
+  faixa.hidden = lista.length === 0;
+  document.getElementById('pendencias-total').textContent = lista.length;
+  document.getElementById('pendencias-lista').innerHTML = lista.map(p => `<li>${esc(p)}</li>`).join('');
+
+  document.querySelectorAll('[data-principal]').forEach(a => {
+    a.href = v.primaryHref;
+    a.target = v.primaryTarget;
+    a.dataset.evento = v.waOk ? 'clique_whatsapp' : 'clique_ligar';
+  });
+  document.querySelectorAll('[data-ligar]').forEach(a => { a.href = 'tel:' + c.telefone; a.dataset.evento = 'clique_ligar'; });
+  const fab = document.getElementById('fab');
+  fab.textContent = v.fabLabel;
+  fab.setAttribute('aria-label', v.fabLabel);
+  document.querySelectorAll('[data-google]').forEach(a => { a.href = v.googleUrl; });
+  const rota = document.getElementById('como-chegar');
+  rota.href = v.mapsHref;
+  rota.dataset.evento = 'clique_como_chegar';
+
+  document.querySelectorAll('[data-nota-texto]').forEach(el => { el.textContent = v.ratingText; });
+  document.getElementById('hero-nota').hidden = !v.ratingConfirmed;
+  document.getElementById('confianca-nota').hidden = !v.ratingConfirmed;
+  document.getElementById('confianca-nota-pendente').hidden = v.ratingConfirmed;
+
+  document.querySelectorAll('[data-uf]').forEach(el => { el.textContent = c.croUF.valor; });
+  document.getElementById('tempo-atuacao').textContent = c.tempoAtuacao.valor;
+  document.getElementById('tempo-pendente').hidden = !c.tempoAtuacao.pendente;
+  document.getElementById('canal-contato').textContent = v.canalContato;
+
+  document.getElementById('lista-tratamentos').innerHTML = c.tratamentos.valor.map(t => `
+          <article style="background:#F5F8FB;border-radius:18px;padding:22px;display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px">
+              <div aria-hidden="true" style="display:grid;grid-template-columns:16px 16px;gap:3px">
+                <span style="height:16px;border-radius:5px;background:#1F4178"></span>
+                <span style="height:16px;border-radius:5px;background:#3A4B72"></span>
+                <span style="height:16px;border-radius:5px;background:#BDDAF3"></span>
+                <span style="height:16px;border-radius:5px;background:#5E99D9"></span>
+              </div>
+              ${c.tratamentos.pendente ? `<span style="${ETIQUETA}">EXEMPLO</span>` : ''}
+            </div>
+            <h3 style="margin:0;font-family:Poppins,sans-serif;font-weight:600;font-size:19px;color:#1F4178;line-height:1.25">${esc(t.nome)}</h3>
+            <p style="margin:0;font-size:16px;text-wrap:pretty">${esc(t.texto)}</p>
+          </article>`).join('');
+
+  document.getElementById('lista-equipe').innerHTML = c.dentistas.map(d => `
+          <article style="background:#fff;border-radius:22px;padding:16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:20px;align-items:start">
+            <figure style="margin:0;aspect-ratio:4/5;border-radius:16px;background:repeating-linear-gradient(135deg,#E3EEF9 0 12px,#F1F6FC 12px 24px);display:flex;align-items:flex-end">
+              <figcaption style="margin:10px;padding:4px 8px;background:#fff;border-radius:6px;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:#1F4178">${esc(d.foto)} · 800×1000 · imagem ilustrativa</figcaption>
+            </figure>
+            <div style="display:flex;flex-direction:column;gap:10px;padding:6px 4px">
+              <h3 style="margin:0;font-family:Poppins,sans-serif;font-weight:700;font-size:22px;color:#1F4178;line-height:1.2">${esc(d.nome)}</h3>
+              <p style="margin:0;font-weight:700;color:#277B76;font-size:15px">CRO-${esc(c.croUF.valor)} ${esc(d.cro)}</p>
+              ${d.bio.pendente ? `<span style="align-self:flex-start;${ETIQUETA}">EXEMPLO</span>` : ''}
+              <p style="margin:0;font-size:16px;text-wrap:pretty">${esc(d.bio.valor)}</p>
+            </div>
+          </article>`).join('');
+
+  document.getElementById('lista-depoimentos').innerHTML = c.depoimentos.valor.map(r => `
+          <figure style="margin:0;background:#fff;border-radius:18px;padding:24px;display:flex;flex-direction:column;gap:14px;border:1px dashed #C9D6E6">
+            ${c.depoimentos.pendente ? `<span style="align-self:flex-start;${ETIQUETA}">EXEMPLO — não é avaliação real</span>` : ''}
+            <blockquote style="margin:0;font-size:18px;color:#1F4178;text-wrap:pretty">“${esc(r.texto)}”</blockquote>
+            <figcaption style="font-size:15px">${esc(r.autor)}</figcaption>
+          </figure>`).join('');
+
+  const faq = [
+    { pergunta: 'Como faço para agendar?', resposta: v.waOk ? 'Pelo WhatsApp ou pelo telefone (44) 3245-1530. Combinamos o melhor horário para você.' : 'Pelo telefone (44) 3245-1530. Combinamos o melhor horário para você.', pendente: false },
+    { pergunta: 'Como é a primeira consulta?', resposta: 'Conversamos sobre o que te incomoda, fazemos a avaliação e explicamos o plano de tratamento antes de começar qualquer procedimento.', pendente: false },
+    { pergunta: 'Vocês atendem convênio?', resposta: c.convenios.pendente ? 'Informação em confirmação. Por enquanto, consulte pelo telefone (44) 3245-1530.' : c.convenios.valor, pendente: c.convenios.pendente },
+    { pergunta: 'Atendem urgência?', resposta: c.urgencia.pendente ? 'Informação em confirmação. Em caso de dor, ligue para (44) 3245-1530.' : c.urgencia.valor, pendente: c.urgencia.pendente },
+  ];
+  document.getElementById('lista-duvidas').innerHTML = faq.map(f => `
+          <details style="background:#fff;border-radius:14px;border:1px solid #E3EBF4">
+            <summary style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:18px 20px;min-height:56px;font-weight:700;color:#1F4178;font-size:18px">
+              <span>${esc(f.pergunta)}</span>
+              <span class="faq-plus" aria-hidden="true" style="flex:none;font-size:26px;line-height:1;color:#277B76;transition:transform .2s">+</span>
+            </summary>
+            <div style="padding:0 20px 20px;display:flex;flex-direction:column;gap:8px">
+              ${f.pendente ? `<span style="align-self:flex-start;${ETIQUETA}">PENDENTE</span>` : ''}
+              <p style="margin:0;text-wrap:pretty">${esc(f.resposta)}</p>
+            </div>
+          </details>`).join('');
+
+  document.querySelectorAll('[data-endereco-linha]').forEach(el => { el.textContent = v.enderecoLinha; });
+  document.getElementById('numero-pendente').hidden = !c.enderecoNumero.pendente;
+
+  const blocoHorarios = document.getElementById('bloco-horarios');
+  blocoHorarios.querySelectorAll('[data-horario]').forEach(el => el.remove());
+  document.getElementById('horarios-pendente').hidden = !c.horarios.pendente;
+  blocoHorarios.insertAdjacentHTML('beforeend', c.horarios.valor.map(h =>
+    `<div data-horario style="display:flex;justify-content:space-between;gap:16px;border-bottom:1px solid #E3EBF4;padding:6px 0;max-width:380px"><span>${esc(h.dia)}</span><span style="font-weight:700;color:#1F4178">${esc(h.horas)}</span></div>`).join(''));
+
+  document.getElementById('responsavel').textContent = c.responsavelTecnico.valor;
+  document.getElementById('inscricao').textContent = c.inscricaoClinica.valor;
+  const redes = document.getElementById('redes');
+  redes.querySelectorAll('[data-rede]').forEach(el => el.remove());
+  redes.insertAdjacentHTML('beforeend', Object.entries(c.redes.valor).map(([nome, url]) => url
+    ? `<a data-rede href="${esc(url)}" target="_blank" rel="noopener" style="color:#fff;align-self:flex-start;padding:4px 0">${esc(nome)}</a>`
+    : `<span data-rede>${esc(nome)}: [PREENCHER]</span>`).join(''));
+  document.getElementById('ano').textContent = new Date().getFullYear();
+  document.getElementById('aviso-ilustrativas').hidden = !c.fotosReais.pendente;
+}
+
+/* ---------- dados estruturados (Google) ---------- */
+function dadosEstruturados(c) {
+  const data = {
+    '@context': 'https://schema.org', '@type': 'Dentist',
+    name: 'Odontologia Jean Savoldi & Bianca Savoldi', telephone: '+55-44-3245-1530',
+    address: { '@type': 'PostalAddress', streetAddress: 'Av. Sete de Setembro' + (c.enderecoNumero.pendente ? '' : ', ' + c.enderecoNumero.valor) + ', Vila São Lourenço', addressLocality: 'Mandaguaçu', addressRegion: 'PR', postalCode: '87160-000', addressCountry: 'BR' }
+  };
+  if (!c.siteUrl.pendente) data.url = c.siteUrl.valor;
+  if (!c.horarios.pendente) data.openingHours = c.horarios.valor.filter(h => h.dias && h.abre).map(h => h.dias + ' ' + h.abre + '-' + h.fecha);
+  let el = document.getElementById('jsonld-dentist');
+  if (!el) { el = document.createElement('script'); el.type = 'application/ld+json'; el.id = 'jsonld-dentist'; document.head.appendChild(el); }
+  el.textContent = JSON.stringify(data);
+}
+
+/* ---------- botão fixo no celular: aparece depois dos botões do topo e some perto do fim ---------- */
+function iniciarBotaoFixo() {
+  const fab = document.getElementById('fab');
+  const largo = window.matchMedia('(min-width: 900px)');
+  const vis = { hero: true, heroAcima: false, final: false, rodape: false };
+  const atualizar = () => {
+    const passouHero = !vis.hero && vis.heroAcima;
+    fab.hidden = !(!largo.matches && passouHero && !(vis.final || vis.rodape));
+  };
+  largo.addEventListener('change', atualizar);
+  if (!('IntersectionObserver' in window)) return;
+  const io = new IntersectionObserver(entradas => {
+    entradas.forEach(e => {
+      vis[e.target.dataset.k] = e.isIntersecting;
+      if (e.target.dataset.k === 'hero') vis.heroAcima = e.boundingClientRect.top < 0;
+    });
+    atualizar();
+  });
+  [['hero', 'hero-acoes'], ['final', 'chamada-final'], ['rodape', 'rodape']].forEach(([k, id]) => {
+    const el = document.getElementById(id);
+    el.dataset.k = k;
+    io.observe(el);
+  });
+}
+
+/* ---------- medição: cliques vão para o dataLayer; o GA4 só carrega com ID e consentimento ---------- */
+function iniciarMedicao(c) {
+  window.dataLayer = window.dataLayer || [];
+  const gaId = c.ga4Id.valor || '';
+  const carregarGA = () => {
+    if (window.__gaLoaded) return; window.__gaLoaded = true;
+    const s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId; document.head.appendChild(s);
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date()); window.gtag('config', gaId);
+  };
+  document.addEventListener('click', ev => {
+    const alvo = ev.target.closest('[data-evento]');
+    if (!alvo) return;
+    window.dataLayer.push({ event: alvo.dataset.evento });
+    if (window.gtag && window.__gaLoaded) window.gtag('event', alvo.dataset.evento);
+  });
+  if (!gaId) return;
+  let consentimento = null;
+  try { consentimento = localStorage.getItem('savoldi-consent'); } catch (e) {}
+  if (consentimento === 'sim') { carregarGA(); return; }
+  if (consentimento === 'nao') return;
+  const aviso = document.getElementById('consentimento');
+  aviso.hidden = false;
+  document.getElementById('cookies-aceitar').addEventListener('click', () => { try { localStorage.setItem('savoldi-consent', 'sim'); } catch (e) {} aviso.hidden = true; carregarGA(); });
+  document.getElementById('cookies-recusar').addEventListener('click', () => { try { localStorage.setItem('savoldi-consent', 'nao'); } catch (e) {} aviso.hidden = true; });
+}
+
+montar(CONFIG);
+dadosEstruturados(CONFIG);
+iniciarBotaoFixo();
+iniciarMedicao(CONFIG);
+</script>
+</body>
+</html>

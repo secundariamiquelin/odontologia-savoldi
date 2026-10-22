@@ -1,0 +1,12 @@
+# This repository is public (GitHub Pages): only the page and the images it uses are published.
+# Working files stay local: the Claude Design export, the prompt, the reference photo and the notes.
+*.zip
+prompt-landing-page.md
+referencia-logo.jpg
+README.md
+
+# Images from earlier versions that the page no longer uses
+img/*
+!img/favicon.svg
+!img/hero.webp
+!img/og-image.png
